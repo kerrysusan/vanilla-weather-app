@@ -14,8 +14,111 @@
   </head>
   <body>
     <div class="container">
-      <h1>SheCodes Weather App</h1>
-      <script src="src/index.js"></script>
+      <div class="weatherApp">
+        <h1>SheCodes Weather App</h1>
+        <br />
+        <form id="search-form">
+          <input
+            type="text"
+            autocomplete="off"
+            autofocus="on"
+            placeholder="Select a city..."
+            style="width: 300px"
+            id="city-input"
+          />
+          <button type="submit" class="btn btn-light">Search</button>
+        </form>
+        <br />
+        <div class="row">
+          <div class="col-md-4">
+            <h2 id="current-city">London</h2>
+            <h5 class="dayTime" id="current-time">Monday 16:31</h5>
+            <h6 class="weatherDescription">Cloudy</h6>
+            <br />
+            <h5 class="temperature">19<span class="tempUnits">˚C</span></h5>
+          </div>
+          <div class="col-md-2">
+            <h6>Precipitation 0%</h6>
+            <h6>Humidity 91%</h6>
+            <h6>Wind 6kph</h6>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Mon 8</h5>
+                <p class="card-text">
+                  <span class="weatherEmoji">☁️</span> <br />
+                  15˚
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Tue 9</h5>
+                <p class="card-text">
+                  <span class="weatherEmoji">🌧️</span> <br />
+                  12˚
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Wed 10</h5>
+                <p class="card-text">
+                  <span class="weatherEmoji">🌦️</span><br />
+                  13˚
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Thu 11</h5>
+                <p class="card-text">
+                  <span class="weatherEmoji">🌦️</span><br />
+                  17˚
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Fri 12</h5>
+                <p class="card-text">
+                  <span class="weatherEmoji">🌦️</span><br />
+                  16˚
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Sat 13</h5>
+                <p class="card-text">
+                  <span class="weatherEmoji">☁️</span><br />
+                  16˚
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="src/index.js"></script>
+    <footer>
+      <a href="https://github.com/kerrysusan/weather-app-project-week6"
+        >GitHub Repository</a
+      >
+    </footer>
   </body>
 </html>
